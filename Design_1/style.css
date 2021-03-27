@@ -25,6 +25,7 @@ html{
   transition: all 0.3s ease-in-out;
   padding: 15px 0;
   background: rgb(255, 212, 201);
+  box-shadow: 0 8px 6px -6px #999;
 }
 /* scroll effect */
 /* .navbar.sticky{
@@ -273,6 +274,22 @@ html{
     color: rgb(40, 40, 44);
     background: burlywood;
   }
+/* footer section start */
+footer{
+  background: rgb(56, 55, 55);
+  padding: 20px 23px;
+}
+footer span{
+  margin-left: 60px;
+}
+footer span a{
+  color:rgb(167, 111, 6);
+  text-decoration: none;
+}
+
+footer span a:hover{
+  text-decoration: underline;
+}
 
   @media (max-width: 950px){
     .menu-btn{

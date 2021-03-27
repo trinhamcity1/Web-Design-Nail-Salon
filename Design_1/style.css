@@ -148,10 +148,12 @@ html{
   background: burlywood;
 }
 /* similar */
-.about, .contact, .footer{
+.about, .contact, .footer, .brand{
     font-family: 'Noto Sans JP', sans-serif;
   }
-  .about .about-content{
+  .about .about-content,
+  .services .serv-content,
+  .brand .brand-content{
     display: flex;
     align-items:center;
     flex-wrap: wrap;
@@ -166,7 +168,7 @@ html{
     padding-bottom: 20px;
     color: rgb(88, 70, 55);
     font-family: 'Ubuntu', sans-serif;
-    
+    margin-top: 20px;
   }
   /* the line above about me */
   section .title::before{
@@ -184,7 +186,7 @@ html{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color:rgb(181, 114, 84);
+    color:rgb(228, 153, 143);
     padding: 5px;
     background:rgb(255, 255, 255);
     transform: translateX(-50%);
@@ -193,7 +195,7 @@ html{
 
 /* about section styling */
 .about{
-  background :rgba(251, 248, 247, 0.605) ;
+  background :rgba(255, 255, 255, 0.605) ;
 }
 .about .title::after{
     content: "Who We Are"
@@ -274,6 +276,100 @@ html{
     color: rgb(40, 40, 44);
     background: burlywood;
   }
+  /* brand */
+  /* .brand{
+    background :rgba(255, 255, 255, 0.578) ;
+  }
+  .brand .title::after{
+      content: "We Use"
+    }
+    .brand .brand-content .card{
+      width: calc(33% - 20px);
+      background: rgba(61, 29, 2, 0.605);
+      text-align: center;
+      border-radius: 6px;
+      padding: 20px 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+.brand .brand-content .bars{
+
+
+}
+.brand .brand-content .bars .info{
+
+}
+.brand .brand-content .bars .info i{
+  font-size: 40px;
+  color:rgba(255, 212, 201, 0.734);
+}
+.brand .brand-content .bars .info .text-1{
+  font-size: 40px;
+  color:rgba(255, 212, 201, 0.734);
+} */
+
+/* services section start  */
+.services, .projects{
+  background: rgb(255, 255, 255);
+  color: rgb(2, 2, 2);
+}
+.services .title::before,
+.projects .title::before{
+  background: rgb(0, 0, 0);
+}
+
+.services .title::after,
+.projects .title::after{
+  background: rgb(255, 255, 255);
+  content:"We provide";
+}
+.services .serv-content .card{
+  width: calc(20% - 5px);
+  background: rgb(255, 223, 192);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+  background:rgb(91, 91, 91) ;
+}
+.services .serv-content .card p{
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover p{
+  color: #fff;
+}
+.services .serv-content .card .text{
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .text{
+  color: #fff;
+}
+.services .serv-content .card .box{
+  transition: all 0.3s ease;
+  
+}
+.services .serv-content .card:hover .box{
+  transform: scale(1.05);
+}
+.services .serv-content .card i{
+  font-size: 50px;
+  color: rgb(123, 32, 32);
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+  color:#fff ;
+}
+.services .serv-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+
+
 /* footer section start */
 footer{
   background: rgb(56, 55, 55);
